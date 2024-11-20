@@ -77,6 +77,14 @@ That's it! Nexus is now installed and running on your Linux system. You can proc
 
 ```
 docker run -d --name nexus -p 8081:8081 sonatype/nexus3
+**Find admin password to login and reeset password:**
+root@ip-172-31-44-231:~# cd /
+root@ip-172-31-44-231:/# find . -name admin.password
+./var/lib/docker/volumes/8b55eff9eac01e859778d428e5bf469437f8cf50094365870cb495ec48c47115/_data/admin.password
+root@ip-172-31-44-231:/# cat ./var/lib/docker/volumes/8b55eff9eac01e859778d428e5bf469437f8cf50094365870cb495ec48c47115/_data/admin.password
+root@ip-172-31-44-231:/# 6ba4./var/lib/docker/volumes/8b55eff9eac01e859778d428e5bf469437f8cf50094365870cb495ec48c47115/_data/admin.passwordcb495ec48c47115/_data/admin.password
+2d3060af-46ed-4455-ba80-f6ba4a2aa79eroot@ip-172-31-44-231:/#
+
 ```
 In your POM file, you can include the following information :
 
