@@ -77,7 +77,10 @@ That's it! Nexus is now installed and running on your Linux system. You can proc
 
 ```
 docker run -d --name nexus -p 8081:8081 sonatype/nexus3
+
+
 **Find admin password to login and reeset password:**
+---------------------------------------------------------
 root@ip-172-31-44-231:~# cd /
 root@ip-172-31-44-231:/# find . -name admin.password
 ./var/lib/docker/volumes/8b55eff9eac01e859778d428e5bf469437f8cf50094365870cb495ec48c47115/_data/admin.password
